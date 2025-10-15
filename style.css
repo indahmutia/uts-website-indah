@@ -1,0 +1,188 @@
+/* ======== FONT & BODY ======== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  color: #4a0072;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ======== HEADER & NAV ======== */
+header {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 26px;
+  color: #db2777;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #db2777;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ec4899;
+  text-shadow: 0 0 10px #f9a8d4;
+}
+
+/* ======== SECTION UMUM ======== */
+section {
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 20px;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+}
+
+/* ======== PROFIL ======== */
+.profil-animasi {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #db2777;
+  animation: goyang 3s infinite alternate;
+}
+
+@keyframes goyang {
+  from { transform: rotate(-5deg); }
+  to { transform: rotate(5deg); }
+}
+
+.sapaan {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+  color: #c026d3;
+}
+
+.sapaan span {
+  color: #db2777;
+}
+
+/* ======== HOBI ======== */
+.hobi-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.foto-hobi {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.foto-hobi:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* ======== MOTTO ======== */
+.motto {
+  font-style: italic;
+  font-size: 18px;
+  color: #5b21b6;
+}
+
+/* ======== TABEL (PENDIDIKAN & JADWAL) ======== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ec4899;
+  padding: 10px;
+}
+
+th {
+  background-color: #fbcfe8;
+  color: #9d174d;
+}
+
+td {
+  background-color: #fdf2f8;
+}
+
+/* ======== TEKS BAGIAN BELAJAR ======== */
+#belajar p, #tata-cara p, #kesan p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* ======== KONTAK ======== */
+#contact a {
+  color: #db2777;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#contact a:hover {
+  color: #9333ea;
+  text-decoration: underline;
+}
+
+/* ======== JAM DIGITAL ======== */
+#clock {
+  font-size: 28px;
+  font-weight: bold;
+  color: #c026d3;
+  margin-top: 10px;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background: rgba(255,255,255,0.8);
+  padding: 15px;
+  font-size: 14px;
+  color: #6b21a8;
+  margin-top: 30px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+}
+
+/* ======== ANIMASI BUNGA, BINTANG & BULAN ======== */
+.bunga, .bintang, .bulan {
+  position: fixed;
+  top: -10px;
+  font-size: 20px;
+  animation: jatuh linear forwards;
+  pointer-events: none;
+  z-index: 999;
+}
+
+@keyframes jatuh {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* ======== SCROLL HALUS ======== */
+html {
+  scroll-behavior: smooth;
+}
